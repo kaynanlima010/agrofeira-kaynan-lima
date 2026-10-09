@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8"
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agrofeira</title>
     </head>
 
     <body>
-        <header>
+        <a href="#conteudo">Pular para o conteúdo</a>
+
+        <header class="cabecalho-site">
             <h1>AgroFeira de Paragominas</h1>
-            <nav>
-                <ul>
-                     <li><a href="#produtos">Produtos</a></li>
-                     <li><a href="#sobre">Sobre</a></li>
+
+            <nav aria-label="Principal">
+                <ul class="menu">
+                     <li><a href="index.html">Início</a></li>
+                     <li><a href="safra.html">Safra</a></li>
+                     <li><a href="cadastro-produtor.html">Cadastro de produtor</a></li>
+                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
+        <main id="conteudo">
+
             <section>
                 <h2 id="sobre">Sobre a AgroFeira</h2>
 
                 <p>
-                    Bem-vindo à AgroFeira de Paragominas! Somos uma feira local que promove
-                    a comercialização de produtos agrícolas frescos e de qualidade
+                    A AgroFeira é uma iniciativa que promove a <em>comercialização de produtos
+                    agrícolas frescos e de qualidade</em>, valorizando o trabalho local.
                 </p>
+
+                <figure class="figure-destaque">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="feira-1280.jpg">
+                        
+                        <img
+                        src="feira-330.jpg"
+                        alt="Imagem de uma feira de produtos agrícolas."
+                        width="330"
+                        height="247">
+
+                    </picture>
+
+                    <figcaption>
+                         Foto: Rayelle da Silva Freitas, CC BY-SA 4.0, via Wikimedia Commons;
+                    </figcaption>
+
+                </figure>
+
+                <form class="busca">
+                    <label for="produto">Procurar produto</label>
+                    <input type="search" id="produto" name="produto">
+                    <button type="submit">
+                        <img src="lupa.png"
+                        alt="Pesquisar"
+                        width="40"
+                        height="40">
+                    </button>
+                </form>
+
             </section>
 
             <section>
                 <h2 id="produtos">Produtos</h2>
-
+                
+                <p>
+                    <a href="#sobre">Voltar para a apresentação da AgroFeira.</a>
+                </p>
                 <ul>
-                    <li>Tomate — (kg)</li>
-                    <li>Farinha de mandioca — (kg)</li>
-                    <li>Ovos caipiras — (dúzia)</li>
+                    <li>Mandioca — saca de 60 kg</li>
+                    <li>Banana-prata — cacho</li>
+                    <li>Açaí — rasa</li>
+                    <li>Pimenta-do-reino — quilo</li>
+                    <li>Cupuaçu — quilo</li>
+                    <li>Alface — maço</li>
                 </ul>
+                
+                <p class="aviso">
+                    Os preços dos produtos <strong>mudam semanalmente</strong>.
+                </p>
 
             </section>
         </main>
+        
+        <aside>
+            <h2>Informações da feira</h2>
+            <p>Endereço: Rua Boto Azul, 123, Centro, Paragominas, PA</p>
+            <p>Horário: Segunda a sábado, das 8h às 18h.</p>
+        </aside>
 
         <footer>
             <p>© 2026 AgroFeira de Paragominas. Todos os direitos reservados.</p>
