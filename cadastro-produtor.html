@@ -1,16 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de produtor - AgroFeira</title>
     </head>
 
     <body>
 
-        <header>
+        <header class="cabecalho-site">
+
+            <h1>AgroFeira de Paragominas</h1>
+
+            <nav aria-label="Principal">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="safra.html">Safra</a></li>
+                    <li><a href="cadastro-produtor.html" aria-current="page">Cadastro de produtor</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
 
         </header>
 
-        <main>
+        <main id="conteudo">
+            <form class="formulario-cadastro">
+
+                <fieldset>
+                    <legend>Quem é você?</legend>
+                    <label for="nome">Nome completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            autocomplete="name"
+                            required>
+                    <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required> 
+                    <label for="telefone">Telefone</label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            autocomplete="tel">    
+                    <label for="caf">CAF</label>
+                        <input
+                            type="text"
+                            id="caf"
+                            name="caf">
+                    <label for="cep">CEP</label>
+                        <input
+                            type="text"
+                            id="cep"
+                            name="cep"
+                            inputmode="numeric"
+                            pattern="[0-9]{5}-?[0-9]{3}"
+                            aria-describedby="ajuda-cep">
+                    <p id="ajuda-cep">Digite o CEP com ou sem hífen.</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>O que você vende?</legend>
+                    <label for="produto">Produto</label>
+                    <select id="produto" name="produto" required>
+                        <option value="">Escolha um produto</option>
+                        <option value="mandioca">Mandioca</option>
+                        <option value="banana-prata">Banana-prata</option>
+                        <option value="acai">Açaí</option>
+                        <option value="pimenta-do-reino">Pimenta-do-reino</option>
+                        <option value="cupuacu">Cupuaçu</option>
+                        <option value="alface">Alface</option>
+                    </select>
+
+                    <label for="quantidade">Quantidade</label>
+                        <input
+                            type="number"
+                            id="quantidade"
+                            name="quantidade"
+                            min="1"
+                            max="500"
+                            step="1"
+                            required>
+                    <label for="data-inicio">Data de início</label>
+                        <input
+                            type="date"
+                            id="data-inicio"
+                            name="data-inicio">
+
+                    <p>Entrega</p>
+
+                    <label>
+                        <input type="radio" name="entrega" value="leva-feira">
+                    </label>
+
+                    <label>
+                        <input type="radio" name="entrega" value="retira-propriedade">
+                    </label>
+                    
+                    <label for="observacao">Observações</label>
+                        <text id="observacao" name="observacao"></textarea>
+                    
+                    <label>
+                        <input type="checkbox" name="regras" required>
+                    </label>
+                    
+                    <button type="submit">Cadastrar produtor</button>
+
+                </fieldset>
+            </form>
 
         </main>
 
