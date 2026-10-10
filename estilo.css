@@ -49,7 +49,7 @@ p {
 .cabecalho-site {
   background-color: var(--cor-marca);
   color: var(--cor-sobre-marca);
-  padding: var(--espaco-2);
+  padding: var(--espaco-3);
 }
 
 .menu {

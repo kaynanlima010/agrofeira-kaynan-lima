@@ -9,7 +9,7 @@
 
 /* 2. Nenhuma margem de fábrica: o espaço é decisão sua */
 * {
-  margin: 0;
+  margin: 3;
 }
 
 /* 3. Linhas com folga para ler */
