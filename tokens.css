@@ -1,8 +1,8 @@
 :root {
   /* Tokens de cor */
   --cor-fundo: #ece3f5;
-  --cor-superficie: #ff4444;
-  --cor-texto: #333;
+  --cor-superficie: #ffffff;
+  --cor-texto: #231a2d;
   --cor-do-texto-suave: #666;
   --cor-marca: #008683;
   --cor-sobre-marca: #ffffff;
@@ -18,9 +18,9 @@
 
   --espaco-1: 0.5rem;
   --espaco-2: 1rem;
-  --espaco-3: 2rem;
+  --espaco-3: 1.5rem;
   --espaco-4: 2rem;
 
   --raio: 20 px;
-  --sombra: 0 2px 6px rgba(34, 34, 34, 0.15);
+  --sombra: 0 2px 6px rgb(0 0 0 / 15%);
 }
