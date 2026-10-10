@@ -1,0 +1,26 @@
+:root {
+  /* Tokens de cor */
+  --cor-fundo: #ece3f5;
+  --cor-superficie: #157e00;
+  --cor-texto: #333;
+  --cor-do-texto-suave: #666;
+  --cor-marca: #008683;
+  --cor-sobre-marca: #ffffff;
+  --cor-borda: #cdbfdd;
+
+  --fonte-texto: system-ui, sans-serif;
+  --fonte-titulo: 'Google Sans Flex', sans-serif;
+
+  --tamanho-texto: 1rem;
+  --tamanho-h3: 1.25rem;
+  --tamanho-h2: 1.563rem;
+  --tamanho-h1: 1.953rem;
+
+  --espaco-1: 0.5rem;
+  --espaco-2: 1rem;
+  --espaco-3: 2rem;
+  --espaco-4: 2rem;
+
+  --raio: 20 px;
+  --sombra: 0 2px 6px rgba(34, 34, 34, 0.15);
+}
