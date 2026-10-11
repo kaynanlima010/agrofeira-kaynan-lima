@@ -111,6 +111,10 @@ p {
 }
 
 /* Safra */
+.tabela-safra {
+  border-radius: var(--raio);
+  overflow: hidden;
+}
 .tabela-safra th,
 .tabela-safra td {
   padding: var(--espaco-1) var(--espaco-2);
