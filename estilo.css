@@ -215,3 +215,35 @@ aside .lista-produtos {
 .cartao-produto .preco {
   font-weight: 700;
 }
+
+.pagina-catalogo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "cabecalho"
+    "menu"
+    "conteudo"
+    "lateral"
+    "rodape";
+  gap: var(--espaco-2);
+}
+
+.pagina-catalogo .cabecalho-site {
+  grid-area: cabecalho;
+}
+
+.pagina-catalogo > nav {
+  grid-area: menu;
+}
+
+.pagina-catalogo main {
+  grid-area: conteudo;
+}
+
+.pagina-catalogo aside {
+  grid-area: lateral;
+}
+
+.pagina-catalogo .rodape-site {
+  grid-area: rodape;
+}
