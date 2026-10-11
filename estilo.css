@@ -78,7 +78,8 @@ p {
 }
 
 .busca button,
-.formulario-cadastro button {
+.formulario-cadastro button,
+.cartao-produto button {
   background-color: var(--cor-marca);
   color: var(--cor-sobre-marca);
   border: none;
@@ -97,8 +98,7 @@ p {
   border-radius: var(--raio);
   box-shadow: var(--sombra);
   padding: var(--espaco-2);
-  margin-bottom: var(--espaco-2);
-  max-width: 20rem;
+  width: 100%;
 }
 
 .aviso {
@@ -183,4 +183,35 @@ dt {
   border-top: 1px solid var(--cor-borda);
   color: var(--cor-texto-suave);
   padding: var(--espaco-2);
+}
+
+/* Grade dos cartões */
+.pagina-catalogo main .lista-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: var(--espaco-2);
+}
+
+.destaque {
+  grid-column: 1 / -1;
+}
+
+aside .lista-produtos {
+  grid-template-columns: 1fr;
+}
+
+.cartao-produto img {
+  border-radius: var(--raio);
+}
+
+.cartao-produto h3 {
+  margin-top: var(--espaco-1);
+}
+
+.cartao-produto .produtor {
+  color: var(--cor-texto-suave);
+}
+
+.cartao-produto .preco {
+  font-weight: 700;
 }
