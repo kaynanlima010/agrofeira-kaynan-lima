@@ -247,3 +247,12 @@ aside .lista-produtos {
 .pagina-catalogo .rodape-site {
   grid-area: rodape;
 }
+
+.pagina-catalogo > nav {
+  background-color: var(--cor-marca);
+  padding: var(--espaco-2);
+}
+
+.pagina-catalogo .rodape-site {
+  grid-area: rodape;
+}
