@@ -256,3 +256,13 @@ aside .lista-produtos {
 .pagina-catalogo .rodape-site {
   grid-area: rodape;
 }
+
+@media (min-width: 38rem) {
+  .pagina-catalogo {
+    grid-template-columns: 10rem minmax(0, 1fr) 14rem;
+    grid-template-areas:
+      "cabecalho cabecalho cabecalho"
+      "menu conteudo lateral"
+      "rodape rodape rodape";
+  }
+}
