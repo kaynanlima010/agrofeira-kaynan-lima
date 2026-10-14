@@ -296,6 +296,7 @@ aside .lista-produtos {
 
   .cartao-produto img {
     grid-row: span 4;
+    width: 100%;
   }
 
   .cartao-produto button {
