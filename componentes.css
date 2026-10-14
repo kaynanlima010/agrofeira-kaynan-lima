@@ -1,0 +1,206 @@
+@layer componentes {
+ 
+    /* Home */
+  .figura-destaque figcaption {
+    color: var(--cor-texto-suave);
+    margin-top: var(--espaco-1);
+  }
+
+  .busca input[type="search"] {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 0.5em;
+  }
+
+  /* Botões */
+  .busca button,
+  .formulario-cadastro button,
+  .cartao-produto button {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border: none;
+    border-radius: var(--raio);
+    padding: 0.5em 1em;
+  }
+
+  /* Lista e cartões */
+  .lista-produtos {
+    list-style: none;
+    padding: 0;
+  }
+
+  .cartao-produto {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: var(--espaco-2);
+    width: 100%;
+  }
+
+  .aviso {
+    background-color: var(--cor-superficie);
+    border: 2px solid var(--cor-marca);
+    border-radius: var(--raio);
+    padding: var(--espaco-2);
+    margin-top: var(--espaco-3);
+    max-width: 34rem;
+  }
+
+    /* Safra */
+  .tabela-safra {
+    border-radius: var(--raio);
+    overflow: hidden;
+  }
+
+  .tabela-safra th,
+  .tabela-safra td {
+    padding: var(--espaco-1) var(--espaco-2);
+  }
+
+  .tabela-safra thead th {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+  }
+
+  .tabela-safra td {
+    background-color: var(--cor-superficie);
+  }
+
+    /* Cadastro */
+  .formulario-cadastro > fieldset {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: var(--espaco-2);
+    margin-bottom: var(--espaco-3);
+  }
+
+  fieldset fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  legend {
+    font-weight: 700;
+    color: var(--cor-marca);
+  }
+
+  .formulario-cadastro input[type="text"],
+  .formulario-cadastro input[type="email"],
+  .formulario-cadastro input[type="tel"],
+  .formulario-cadastro input[type="number"],
+  .formulario-cadastro input[type="date"],
+  .formulario-cadastro select,
+  .formulario-cadastro textarea {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 0.5em;
+    background-color: var(--cor-superficie);
+  }
+
+    /* Sobre */
+  blockquote {
+    color: var(--cor-texto-suave);
+    padding-left: var(--espaco-3);
+  }
+
+  dt {
+    font-weight: 700;
+  }
+
+  .pergunta {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: var(--espaco-2);
+    margin-bottom: var(--espaco-1);
+    max-width: 34rem;
+  }
+
+    /* Grade dos cartões */
+  .pagina-catalogo main .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: var(--espaco-2);
+  }
+
+  .destaque {
+    grid-column: 1 / -1;
+  }
+
+  aside .lista-produtos {
+    grid-template-columns: 1fr;
+  }
+
+  .cartao-produto img {
+    border-radius: var(--raio);
+  }
+
+  .cartao-produto h3 {
+    margin-top: var(--espaco-1);
+  }
+
+  .cartao-produto .produtor {
+    color: var(--cor-texto-suave);
+  }
+
+  .cartao-produto .preco {
+    font-weight: 700;
+  }
+
+    /* Categorias */
+  .barra-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-1);
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--espaco-2);
+  }
+
+  .barra-categorias button {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border: none;
+    border-radius: var(--raio);
+    padding: 0.5em 1em;
+  }
+
+    /* Container query — adapta o cartão ao espaço disponível. */
+  .cartao-produto {
+    container-type: inline-size;
+  }
+
+  @container (min-width: 23rem) {
+    .cartao-produto article {
+      display: grid;
+      grid-template-columns: 20rem 1fr;
+      gap: var(--espaco-2);
+    }
+
+    .cartao-produto img {
+      grid-row: span 4;
+      width: 240px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .cartao-produto button {
+      justify-self: start;
+    }
+  }
+
+    /* Estados */
+  .busca button:hover,
+  .formulario-cadastro button:hover,
+  .cartao-produto button:hover,
+  .barra-categorias button:hover {
+    background-color: var(--cor-marca-forte);
+  }
+
+    /* :has() — destaca o cartão quando seu botão recebe foco pelo teclado. */
+  .cartao-produto:has(button:focus-visible) {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+  }
+
+}

@@ -1,3 +1,4 @@
+@layer base {
 :root {
   /* Tokens de cor */
   --cor-fundo: #f0e3f5;
@@ -29,6 +30,7 @@
 
 @media (prefers-color-scheme: dark) {
       :root {
+    color-scheme: light dark;
     --cor-fundo: #1a1520;
     --cor-superficie: #28212e;
     --cor-texto: #f5edf8;
@@ -39,5 +41,8 @@
 
     --cor-marca-forte: #2fa8a4;
     --cor-foco: #d8a7ff;
+
+
   }    
+}
 }
