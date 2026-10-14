@@ -290,7 +290,7 @@ aside .lista-produtos {
 @container (min-width: 23rem) {
   .cartao-produto article {
     display: grid;
-    grid-template-columns: 15rem 1fr;
+    grid-template-columns: 20rem 1fr;
     gap: var(--espaco-2);
   }
 
