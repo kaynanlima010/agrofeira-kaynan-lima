@@ -266,3 +266,19 @@ aside .lista-produtos {
       "rodape rodape rodape";
   }
 }
+
+.barra-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-1);
+}
+
+.barra-categorias {
+  list-style: none;
+  padding: 0;
+}
+
+.barra-categorias {
+  margin-bottom: var(--espaco-2);
+}
+
