@@ -317,3 +317,9 @@ aside .lista-produtos {
   outline: 3px solid var(--cor-foco);
   outline-offset: 3px;
 }
+
+/* :has() — destaca o cartão quando seu botão recebe foco pelo teclado. */
+.cartao-produto:has(button:focus-visible) {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 3px;
+}
