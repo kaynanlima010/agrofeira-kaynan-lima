@@ -323,3 +323,16 @@ aside .lista-produtos {
   outline: 3px solid var(--cor-foco);
   outline-offset: 3px;
 }
+
+/* Link de salto — fica fora da tela até receber foco. */
+.link-salto {
+  position: absolute;
+  left: -9999px;
+}
+
+.link-salto:focus-visible {
+  left: var(--espaco-2);
+  top: var(--espaco-2);
+  z-index: 1000;
+}
+
