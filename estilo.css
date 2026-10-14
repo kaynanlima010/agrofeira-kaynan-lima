@@ -267,10 +267,12 @@ aside .lista-produtos {
   }
 }
 
-.barra-categorias {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--espaco-1);
+.barra-categorias button {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  border: none;
+  border-radius: var(--raio);
+  padding: 0.5em 1em;
 }
 
 .barra-categorias {
