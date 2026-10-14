@@ -290,15 +290,13 @@ aside .lista-produtos {
 @container (min-width: 23rem) {
   .cartao-produto article {
     display: grid;
-    grid-template-columns: 12rem 1fr;
+    grid-template-columns: 15rem 1fr;
     gap: var(--espaco-2);
   }
 
   .cartao-produto img {
     grid-row: span 4;
-    width: 12rem;
-    height: 12rem;
-    object-fit: cover;
+    width: 100%;
   }
 
   .cartao-produto button {
