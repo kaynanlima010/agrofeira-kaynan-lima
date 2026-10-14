@@ -3,10 +3,12 @@
   --cor-fundo: #f0e3f5;
   --cor-superficie: #ffffff;
   --cor-texto: #231a2d;
-  --cor-do-texto-suave: #4e3d5e;
+  --cor-texto-suave: #4e3d5e;
   --cor-marca: #008683;
   --cor-sobre-marca: #ffffff;
   --cor-borda: #ccbfdd;
+  --cor-marca-forte: #034544;
+  --cor-foco: #6b21a8;
 
   --fonte-texto: 'Google Sans Flex', sans-serif;
   --fonte-titulo: 'Google Sans Flex', sans-serif;

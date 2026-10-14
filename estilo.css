@@ -301,3 +301,15 @@ aside .lista-produtos {
     grid-row: span 4;
   }
 }
+
+.busca button:hover,
+.formulario-cadastro button:hover,
+.cartao-produto button:hover,
+.barra-categorias button:hover {
+  background-color: var(--cor-marca-forte);
+}
+
+:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 3px;
+}
